@@ -10,8 +10,8 @@ class AppFame = ({header, body, footer}) => {
           <div>
           	<div className="app-frame">
           		<AppHeader title={this.header}></AppHeader>
-          		<div></div>
-          		<div></div>
+          		<div>{body}</div>
+          		<div>footer</div>
           	</div>
           </div>
         );
@@ -19,6 +19,8 @@ class AppFame = ({header, body, footer}) => {
 }
 
 AppFame.propTypes = {
+	header: PropTypes.string.isRequired,
+	body: PropTypes.element.isRequired,
 
 };
 
